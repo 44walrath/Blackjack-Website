@@ -1,71 +1,121 @@
+/* General Body Styling */
 body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-image: url(Background.jpeg);
+    background-image: url(Background.jpeg); /* Background Image */
+    background-size: cover; /* Ensure the image covers the full screen */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed */
     color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
 }
-#dealer-cards img {
+
+/* Card Styling */
+#dealer-cards img, #your-cards img {
     height: 150px;
     width: 110px;
     margin: 2px;
 }
+
 #your-cards img {
-    height: 150px;
-    width: 110px;
-    margin: 2px;
     padding-bottom: 20px;
 }
-#hit {
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-}
-#hit:hover {
-    background-color: black;
-    color: white;
-}
-#stay {
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-}
-#stay:hover {
-    background-color: black;
-    color: white;
-}
-#replay {
 
+/* Button Styling */
+#hit, #stay, #replay {
     width: 100px;
-    height: 40px;
+    height: 50px;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 5px; /* Round corners for buttons */
 }
-#replay:hover {
+
+#hit:hover, #stay:hover, #replay:hover {
     background-color: black;
     color: white;
 }
+
+/* Replay button visibility */
+#replay {
+    visibility: hidden; /* Initially hidden */
+}
+
+/* Bet Button */
+#button-bet {
+    margin-top: -30px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -50px;
+}
+
+/* Results Text */
 #results {
-    margin-top: 2px;
+    margin-top: 20px;
     color: white;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#replay {
-    visibility: hidden;
-}
-#head {
+
+/* Balance Section Styling */
+#balance, #balance-text {
+    font-size: 30px;
     margin-top: -30px;
-    font-size: 30px;
-}
-#balance {
-    margin-top: -30px;
-    font-size: 30px;
-    margin-bottom: -1px;
-}
-#balance-text {
-    margin-top: -17px;
-    font-size: 30px;
 }
 
+/* Balance text style */
+#balance-text {
+    margin-top: -17px;
+}
+
+/* Bet Form Container */
+#bet-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between input and button */
+    position: relative; /* Make sure the button is placed relative to this container */
+}
+
+/* Bet Input Field */
+#bet {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Add border */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+}
+
+/* Bet Button Hover Effect */
+#button-bet:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Centering Content */
+h2, h3 {
+    margin: 10px;
+}
+
+/* Ensure cards and buttons stay within view */
+#dealer-cards, #your-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
