@@ -47,6 +47,7 @@ body {
     color: white;
 }
 #results {
+    margin-top: 2px;
     color: white;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,5 +55,17 @@ body {
 #replay {
     visibility: hidden;
 }
-
+#head {
+    margin-top: -30px;
+    font-size: 30px;
+}
+#balance {
+    margin-top: -30px;
+    font-size: 30px;
+    margin-bottom: -1px;
+}
+#balance-text {
+    margin-top: -17px;
+    font-size: 30px;
+}
 
