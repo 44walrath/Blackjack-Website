@@ -1,0 +1,58 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url(Background.jpeg);
+    color: white;
+}
+#dealer-cards img {
+    height: 150px;
+    width: 110px;
+    margin: 2px;
+}
+#your-cards img {
+    height: 150px;
+    width: 110px;
+    margin: 2px;
+    padding-bottom: 20px;
+}
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#hit:hover {
+    background-color: black;
+    color: white;
+}
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#stay:hover {
+    background-color: black;
+    color: white;
+}
+#replay {
+
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#replay:hover {
+    background-color: black;
+    color: white;
+}
+#results {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#replay {
+    visibility: hidden;
+}
+
+
