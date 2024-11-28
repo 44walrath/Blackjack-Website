@@ -210,27 +210,3 @@ function reduceAce(playerSum, playerAceCount) {
     }
     return playerSum;
 }
-document.addEventListener("DOMContentLoaded", function () {
-    // This is the secret code you're looking for
-    const secretCode = "million";  // Change this to whatever you like
-
-    // Ask the user for the code when the page loads or trigger via a button click
-    const secretButton = document.createElement("button");
-    secretButton.innerText = "Enter Secret Code";
-    document.body.appendChild(secretButton);
-
-    secretButton.addEventListener("click", function () {
-        // Prompt for the secret code
-        const userCode = prompt("Enter secret code:");
-
-        if (userCode && userCode.toLowerCase() === secretCode.toLowerCase()) {
-            alert("Success! You've received 1 million!");
-
-            // Update balance
-            balance = 1000000;
-            document.getElementById("balance").innerText = balance; // Assuming you have an element with ID "balance" to show the balance
-        } else {
-            alert("Incorrect code! Try again.");
-        }
-    });
-});
