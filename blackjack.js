@@ -133,7 +133,6 @@ function stay() {
     } else {
         if (yourSum > 21) {
             message = "You Lose!";
-            balance -= betValue;  // Deduct bet from balance
         } else if (dealerSum > 21) {
             message = "You Win!";
             balance += betValue * 2;  // Add double the bet to balance
@@ -143,8 +142,7 @@ function stay() {
             message = "You Win!";
             balance += betValue * 2;  // Add double the bet to balance
         } else {
-            message = "You Lose!";
-            balance -= betValue;  // Deduct bet from balance
+            message = "You Lose!"; // Deduct bet from balance
         }
     }
 
